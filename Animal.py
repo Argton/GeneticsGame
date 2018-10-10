@@ -24,11 +24,9 @@ class Animal():
         self.passiveTrait=traitList2[traitIndex2]
         
     def __repr__(self):
-        '''Returns representation of the object'''
         return("{}('{}')".format(self.__class__.__name__, self.animalType))
         
     def __str__(self):
-        '''Returns representation of the object'''
         return "Active trait: {}. Passive trait: {}.".format(self.activeTrait, self.passiveTrait) 
     
     def setAnimalType(self,var):
